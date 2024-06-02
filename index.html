@@ -8,7 +8,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #aa668f;
+            background-color: #e0e0e0;
             margin: 0;
             display: flex;
             align-items: center;
@@ -17,46 +17,57 @@
         }
 
         #calculator-container {
-            border: 1px solid rgb(131, 39, 212);
-            background-color: #f0eff5;
-            font-size: 14px;
+            border: 2px solid #333;
+            background-color: #fff;
+            font-size: 16px;
             text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            margin: 20px auto;
-            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            margin: 30px auto;
+            border-radius: 15px;
         }
 
-        button, .cButton {
-            width: 60px;
-            height: 60px;
-            padding: 10px;
+        button,.cButton {
+            width: 70px;
+            height: 70px;
+            padding: 12px;
             margin: 5px;
-            font-size: 18px;
-            border: none;
-            background-color: #89709c;
+            font-size: 20px;
+            border: 2px solid #666;
+            background-color: #f0f0f0;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-        .cButton {
-            width: 285px; 
+     .cButton {
+            width: 320px;
         }
 
         #display {
-            width: 260px;
-            padding: 20px;
-            margin: 10px auto;
-            font-size: 24px;
+            width: 310px;
+            padding: 10px; /* Reduced padding */
+            margin: 10px auto; /* Adjusted margin */
+            font-size: 28px;
             text-align: right;
-            background-color: black;
-            color: white;
+            background-color: #333;
+            color: #fff;
             text-align: left;
-            border-bottom: 1px solid #cd429c;
+            border-bottom: 2px solid #cd429c;
         }
 
-        .button-row {
+     .button-row {
             display: flex;
             justify-content: space-around;
+            margin-bottom: 10px;
+        }
+
+        button:last-child {
+            background-color: #ff6347;
+            color: #fff;
+        }
+
+        button:hover,.cButton:hover {
+            background-color: #d3d3d3;
         }
     </style>
 </head>
